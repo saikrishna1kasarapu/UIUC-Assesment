@@ -71,6 +71,8 @@ output_task3.json: Lists individuals with Trainings that are expired or expires 
 
 ### Please see the below screenshots that demos the application execution
 
+#### Note: Example output json files that were generated for this demo execution are stored in example_outputs folder.
+
 ![image 1](images/1.jpg)
 
 ![image 2](images/2.jpg)
