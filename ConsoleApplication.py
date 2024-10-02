@@ -141,7 +141,7 @@ def get_trainings_status_for_given_date(obj1):
                 course_expire_date = datetime.strptime(j["expires"], "%m/%d/%Y")
                 if course_expire_date < userdate_plus_onemonth:
                     dict1 = {"name": j["name"]}
-                    if user_given_date <= course_expire_date < userdate_plus_onemonth:
+                    if course_expire_date >= user_given_date and course_expire_date < userdate_plus_onemonth:
                         dict1["expiration_status"] = "expires soon"
                     else:
                         dict1["expiration_status"] = "expired"
